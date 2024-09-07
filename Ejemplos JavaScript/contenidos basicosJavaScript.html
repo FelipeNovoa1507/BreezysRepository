@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Prende la luz</button>
+    <img id="myImage" src="pic_bulboff.gif" style="width:100px">
+    <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Apaga la luz</button>
+
+    <p id="demo1">Cambiar el estilo de fuente</p>
+    <button type="button" onclick="document.getElementById('demo1').style.fontSize='35px'">Click Me!</button>
+    <h2></h2>
+    <p id="demo2">Mostrar u ocultar elementos</p>
+    <button type="button" onclick="document.getElementById('demo2').style.display='none'">Click Me!</button>
+    <button type="button" onclick="document.getElementById('demo2').style.display='block'">Click Me!</button>
+
+
+    <p id="demo3"></p>
+    <script>
+    document.getElementById("demo3").innerHTML = "My First JavaScript";
+    </script>
+
+
+
+
+    <!-- Puedes mostrar datos de diferentes maneras -->
+    
+    <p id="demo4"></p>
+    <script>
+        document.getElementById("demo4").innerHTML = 5 + 6;
+    </script>
+
+    <script>
+        document.write(5 + 4);
+    </script>
+
+    <!-- El uso de document.write con un documento ya cargado eliminara todo el html -->
+    <button type="button" onclick="document.write(5 + 6)">Try it</button>
+
+
+    <!-- de esta manera saltara una alerta en la pantalla con el mensaje correspondiente -->
+    <script>
+        window.alert('Chupalo');
+    </script>
+
+
+    <!-- el uso de window. es opcional, sin este funciona de la misma manera-->
+    <script>
+        alert('Entonces');
+    </script>
+
+    <!--no hay manera de imprimir datos en javascript, solo imprimir lo que se esta mostrando en pantalla en ese momento-->
+    <button onclick="window.print()">Imprimir esta página</button>
+
+
+    <!--se pueden hacer calculos-->
+    <p id="demo5"></p>
+    <script>
+        let x, y, z;  // Statement 1
+        x = 5;        // Statement 2
+        y = 6;        // Statement 3
+        z = x * y;    // Statement 4
+        
+        document.getElementById("demo5").innerHTML =
+        "El valor de Z es " + z + ".";  
+    </script>
+
+    <!--este es ejemplo de una funcion-->
+    <button type="button" onclick="myFunction()">Click Me!</button>
+
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+
+    <script>
+    function myFunction() {
+      document.getElementById("demo6").innerHTML = "Hola Rey";
+      document.getElementById("demo7").innerHTML = "Hola Bro";
+    }
+    </script>
+
+    <!--
+        ESTOS SON PALABRAS CLAVE DE JAVASCRIPT
+        var 	    Declara una variable
+        let	        Declara una variable de bloque
+        const	    Declara una constante de bloque
+        if	        Marca un bloque de instrucciones que se ejecutarán en una condición
+        switch	    Marca un bloque de sentencias a ejecutar en diferentes casos
+        for	        Marca un bloque de instrucciones que se ejecutarán en un bucle
+        function	Declara una función
+        return	    Sale de una función
+        try	        Implementa el control de errores en un bloque de instrucciones
+
+    -->
+
+
+
+</body>
+</html>

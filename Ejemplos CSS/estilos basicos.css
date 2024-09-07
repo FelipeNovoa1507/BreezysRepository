@@ -1,0 +1,68 @@
+body{
+    /* color de fondo */
+    background-color: rgb(199, 165, 129);
+    /* cambiar el estilo de fuente */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* cambiar las lineaws de texto */
+h1,h2,h3,h4,h5,h6{
+    /* cambiar la alineacion de texto */
+    text-align: center;
+
+}
+
+p{
+    /* color del atrivuto seleccionado */
+    color:blueviolet;
+    /* tamaño de texto */
+    font-size: 24px;
+}
+
+/* cambiar cosas dentro de un div */
+div h1{
+    color: turquoise;
+}
+div p{
+    color: aqua;
+}
+
+/* IDs y clases */
+/* IDs son unicos por elemento */
+/* Clases son repetibles */
+
+/* para editar el contenido de un id */
+#parrafo-especial{
+    font-size: 1.5em;
+    font-weight: bold;
+
+}
+
+/* para editar el contenido de un class */
+.parrafo{
+    color: blue;
+    font-style: italic;
+}
+
+/*  */
+a, img{
+    display: block;
+}
+
+/* para editar un link */
+a{
+    margin: 50px 20px;
+    text-decoration: none;
+    color: black;
+}
+
+/* para editar un link solo cuando el mouse este encima */
+a:hover{
+    color:aqua
+}
+
+/* para editar el formato de imagen */
+img{
+    width: 40%;
+    margin: auto;
+}
